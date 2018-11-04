@@ -1,12 +1,25 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
-<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="admin" created="November 3, 2018 10:00:02 PM EDT" modified="November 4, 2018 9:31:00 AM EST" specVersion="2" urnVersion="1.27" nextGlobalID="23">
+<urn:URNspec xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:grl="http:///grl.ecore" xmlns:ucm.map="http:///ucm/map.ecore" xmlns:urn="http:///urn.ecore" name="URNspec" author="admin" created="November 3, 2018 10:00:02 PM EDT" modified="November 4, 2018 3:38:57 PM EST" specVersion="3" urnVersion="1.27" nextGlobalID="101">
   <ucmspec>
     <scenarioGroups name="ScenarioGroup6" id="6">
       <scenarios name="ScenarioDef7" id="7"/>
     </scenarioGroups>
   </ucmspec>
   <grlspec>
-    <actors name="Student" id="12" contRefs="13"/>
+    <intElements name="upload files" id="24" refs="25"/>
+    <intElements name="Be aware of if submitted files are ok" id="26" type="Goal" refs="27"/>
+    <intElements name="File upload system" id="42" type="Task" refs="43"/>
+    <intElements name="Notify applicant" id="48" type="Task" refs="49"/>
+    <intElements name="Check status of application" id="54" type="Goal" refs="55"/>
+    <intElements name="Stay informed" id="66" refs="67"/>
+    <intElements name="submit thesis supervisor proposal" id="70" type="Goal" refs="71"/>
+    <intElements name="communicate with applicant" id="80" refs="81"/>
+    <intElements name="View GPA" id="86" type="Task" refs="87"/>
+    <intElements name="make decisions" id="92" refs="93"/>
+    <intElements name="add a conversions scale for accredited universities" id="98" type="Task" refs="99"/>
+    <actors name="Applicant" id="12" contRefs="13"/>
+    <actors name="Admission Committee Member" id="34" contRefs="35"/>
+    <actors name="Technitian" id="76" contRefs="77"/>
     <groups name="StrategiesGroup4" id="4" strategies="5"/>
     <strategies name="EvaluationStrategy5" id="5" author="admin" group="4"/>
     <impactModel/>
@@ -18,7 +31,57 @@
   </grlspec>
   <urndef>
     <specDiagrams xsi:type="grl:GRLGraph" name="GRLGraph2" id="2">
-      <contRefs xsi:type="grl:ActorRef" name="ActorRef13" id="13" x="265" y="157" width="343" height="265" contDef="12">
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef25" id="25" x="158" y="427" contRef="13" def="24">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef27" id="27" x="307" y="517" contRef="13" def="26">
+        <metadata name="_height" value="68"/>
+        <metadata name="_width" value="108"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef43" id="43" x="162" y="658" contRef="13" def="42">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef49" id="49" x="855" y="517" contRef="35" def="48">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef55" id="55" x="434" y="529" contRef="13" def="54">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef67" id="67" x="384" y="428" contRef="13" def="66">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef71" id="71" x="146" y="538" contRef="13" def="70">
+        <metadata name="_height" value="57"/>
+        <metadata name="_width" value="116"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef81" id="81" x="860" y="422" contRef="35" def="80">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef87" id="87" x="1053" y="515" contRef="35" def="86">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="110"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef93" id="93" x="1049" y="418" contRef="35" def="92">
+        <metadata name="_height" value="45"/>
+        <metadata name="_width" value="127"/>
+      </nodes>
+      <nodes xsi:type="grl:IntentionalElementRef" name="IntentionalElementRef99" id="99" x="1044" y="596" contRef="35" def="98">
+        <metadata name="_height" value="71"/>
+        <metadata name="_width" value="126"/>
+      </nodes>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef13" id="13" x="59" y="320" width="673" height="510" contDef="12" nodes="25 27 43 55 67 71">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef35" id="35" x="734" y="316" width="499" height="447" contDef="34" nodes="49 81 87 93 99">
+        <label/>
+      </contRefs>
+      <contRefs xsi:type="grl:ActorRef" name="ActorRef77" id="77" x="817" y="796" width="200" height="200" contDef="76">
         <label/>
       </contRefs>
     </specDiagrams>
